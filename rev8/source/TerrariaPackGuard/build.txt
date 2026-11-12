@@ -1,0 +1,6 @@
+displayName = Terraria Pack - Worldgen Guard
+author = Local modpack project
+version = 1.0.0
+modReferences = ThoriumMod@1.7.2.8, FargowiltasSouls@1.7.3.9
+side = Both
+includeSource = true

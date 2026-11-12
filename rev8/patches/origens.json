@@ -1,0 +1,32 @@
+[
+  {
+    "mod": "Census",
+    "source": "https://github.com/JavidPack/Census.git",
+    "commit": "6d5f50a71d949999943e7941ace5a2c0cef29a08",
+    "patch": "patches/Census.patch"
+  },
+  {
+    "mod": "CalValEX",
+    "source": "https://github.com/GinYuH/CalValEX.git",
+    "commit": "c4ff01489168f7330f4ea6f19ce7f5c7f5ad0d42",
+    "patch": "patches/CalValEX.patch"
+  },
+  {
+    "mod": "CalamityEntropyLegacy",
+    "source": "https://github.com/WarmurCle/CalamityEntropyLegacy.git",
+    "commit": "368c0edb2b0d7789f80200f61f528f5c1b54c14f",
+    "patch": "patches/CalamityEntropyLegacy.patch"
+  },
+  {
+    "mod": "CalamityOverhaul",
+    "source": "https://github.com/hocha113/CalamityOverhaul.git",
+    "commit": "8d2bd38f268239dab6f05f78061e732eb24b423a",
+    "patch": "patches/CalamityOverhaul.patch"
+  },
+  {
+    "mod": "Munchies_CalamityAddon",
+    "source": "https://github.com/jbossjaslow/MunchiesCalamityAddon.git",
+    "commit": "7717db3c8996b14e24532eb993b7945708af4d7b",
+    "patch": "patches/Munchies_CalamityAddon.patch"
+  }
+]

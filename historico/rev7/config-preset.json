@@ -1,0 +1,97 @@
+[
+  {
+    "mod": "CalamityMod",
+    "file": "CalamityMod_CalamityClientConfig.json",
+    "values": {
+      "Afterimages": false,
+      "ParticleLimit": 1000,
+      "ScreenshakePower": 0.5
+    }
+  },
+  {
+    "mod": "CalamityMod",
+    "file": "CalamityMod_CalamityServerConfig.json",
+    "values": {
+      "BossHealthBoost": 0.0
+    }
+  },
+  {
+    "mod": "FargowiltasSouls",
+    "file": "FargowiltasSouls_SoulConfig.json",
+    "values": {
+      "PerformanceMode": true
+    }
+  },
+  {
+    "mod": "FargosSoulsModDLCRecreated",
+    "file": "FargosSoulsModDLCRecreated_Config.json",
+    "values": {
+      "EnableCalamity": true,
+      "EnableThorium": true,
+      "AddFargosDLCRecipeChangesWhenDisabled": false
+    }
+  },
+  {
+    "mod": "RagnarokMod",
+    "file": "RagnarokMod_ModCompatConfig.json",
+    "values": {
+      "item_deduplication_mode": 1
+    }
+  },
+  {
+    "mod": "RagnarokMod",
+    "file": "RagnarokMod_ItemBalancerConfig.json",
+    "values": {
+      "genericweaponchanges": true
+    }
+  },
+  {
+    "mod": "CalamityBardHealer",
+    "file": "CalamityBardHealer_BalanceConfig.json",
+    "values": {
+      "generalItemBalanceChanges": false,
+      "rogueThrowerMerge": false,
+      "showItemChanges": true
+    }
+  },
+  {
+    "mod": "MagicStorage",
+    "file": "MagicStorage_MagicStorageConfig.json",
+    "values": {
+      "recursionCraftingDepth": 0,
+      "showAllRecipes": false,
+      "itemDataDebug": false
+    }
+  },
+  {
+    "mod": "ShopExpander",
+    "file": "ShopExpander_ShopExpanderConfig.json",
+    "values": {
+      "DisableShopPagingForNPCs": []
+    }
+  },
+  {
+    "mod": "FaeFargoShopCompat",
+    "file": "FaeFargoShopCompat_ClientConfig.json",
+    "values": {
+      "enableMutantChanges": true,
+      "enableSquirrelChanges": true
+    }
+  },
+  {
+    "mod": "NoFishingQuests",
+    "file": "NoFishingQuests_Config.json",
+    "values": {
+      "useCustomCurrency": false,
+      "goldMultiplier": 2.0
+    }
+  },
+  {
+    "mod": "miningcracks_take_on_luiafk",
+    "file": "miningcracks_take_on_luiafk_LuiAFKConfig.json",
+    "values": {
+      "potionsEnable": false,
+      "vanillaPotionsEnable": "Disabled"
+    }
+  }
+]

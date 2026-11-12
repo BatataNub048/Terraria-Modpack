@@ -1,0 +1,25 @@
+COMO INSTALAR — REVISÃO 7 — 49 MODS
+
+1. NO PC ONDE VAI JOGAR, instale Terraria e tModLoader pela Steam. Abra o tModLoader uma vez e feche. O pacote exige Terraria 1.4.4.9 / tModLoader stable 2026.9.3.1. Uma versão mais nova não está automaticamente validada; se o instalador recusar, guarde o relatório e revise o lock antes de continuar.
+2. Copie o ZIP rev7 para esse PC e EXTRAIA TUDO numa pasta nova. Não misture com rev5. Não precisa estar dentro da Steam. Não abra o BAT dentro do ZIP e não copie só ele.
+3. Feche jogo e servidor. Faça cópia dos mundos e personagens antigos. Este perfil ampliado deve começar com personagem e mundo NOVOS.
+4. Abra Instalar-Modpack.bat. Se já havia mods locais, especialmente os erros das imagens, escolha 7 (instalar com backup de conflitos). Em instalação limpa, 1 também funciona.
+5. Quando perguntar a pasta do jogo, cole a pasta que contém tModLoader.dll. No PC informado: E:\SteamLibrary\steamapps\common\tModLoader . Não acrescente o nome do DLL, nem use a pasta do modpack. Pode colar com aspas. ENTER tenta detectar pela Steam; 0 cancela.
+[Referência local omitida.]
+7. Aguarde downloads e verificação. O menu 7 arquiva cópias locais conflitantes com outro nome e verifica o backup; não altera Worlds/Players. Guarde a pasta backups. Se falhar, leia reports; não apague mods/mundos por tentativa.
+8. Reabra o BAT e use 3 para verificar. Abra o tModLoader pela Steam, confira Manage Mods e recarregue: perfil tem 49 entradas, inclusive mods client-side e a correção local. Não habilite todos os mods já assinados na Workshop por cima deste perfil.
+9. Aplique/ confira as configurações de CONFIGURACOES.md. Eternity, Revengeance, Death e dificuldades extras começam desligadas. Crie personagem Classic (softcore) e mundo NOVO Large / Expert, seed normal.
+10. Siga TESTE-INICIAL-MULTIPLAYER.txt antes da campanha. Todos os jogadores e o host usam esta mesma revisão, tML e versões. Não misturem downloads atualizados automaticamente com o lock antigo.
+
+SE APARECER DUPLICATE / LOCAL MOD COPIES CONFLICT
+O caminho do jogo não é a causa: existem duas cópias do mesmo mod. Volte e escolha 7. Os nomes 2025.12CalamityModMusic.tmod e 2026.6CalamityMod.tmod das imagens são cópias locais com nomes diferentes. A opção 1 recusa por segurança; a 7 faz backup antes de instalar.
+
+RESTAURAÇÃO
+Feche o jogo, menu 5, informe a pasta da transação dentro de backups exibida pelo instalador. Arquivos modificados depois da instalação podem impedir restauração automática para evitar sobrescrever alterações; preserve-os e leia o erro. Não abra um mundo expandido usando o perfil antigo sem cópia de segurança.
+
+USO AVANÇADO: CAMINHO DE DADOS PERSONALIZADO
+Se você inicia tML com diretório de dados personalizado, o padrão Documentos pode ser outro perfil. Use o mesmo destino no instalador, por exemplo:
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\installer.ps1" -Mode Install -BackupLocalConflicts -TmlPath "E:\SteamLibrary\steamapps\common\tModLoader" -SavePath "D:\TerrariaDados"
+Esse exemplo só serve se o jogo também usar D:\TerrariaDados. Não escolha a pasta dos executáveis como SavePath. O menu normal detecta Documentos automaticamente.
+
+O instalador exige internet na primeira vez. Cache/backups não acompanham o ZIP. Não é preciso rodar como administrador. Não desative antivírus para forçar um download. Nenhum passo abre portas no roteador automaticamente.

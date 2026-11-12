@@ -1,0 +1,20 @@
+﻿ERRO DA IMAGEM: VERSÃO DIFERENTE, NÃO CAMINHO ERRADO
+
+A pasta E:\SteamLibrary\steamapps\common\tModLoader foi localizada corretamente.
+O jogo instalado era 2026.9.3.1; a revisão 6 exigia 2026.8.3.0. Por isso a instalação parou antes de alterar mods ou saves.
+
+Esta revisão 7 tem alvo 2026.9.3.1 stable / Terraria 1.4.4.9 e mantém os mesmos 49 mods da revisão 6. Não remove a verificação de versão. Veja VERIFICACAO.md para o resultado dos testes realizados com o novo alvo.
+
+COMO CONTINUAR NO OUTRO PC
+1. No prompt antigo, digite 0 e pressione Enter para cancelar; feche a janela.
+2. Extraia TODO o ZIP rev7 em uma pasta nova. Não copie só o BAT e não misture com rev6.
+3. Feche tModLoader e qualquer servidor.
+4. Abra Instalar-Modpack.bat da pasta nova e escolha 7 para fazer backup de possíveis cópias locais conflitantes.
+5. Informe a mesma pasta do jogo: E:\SteamLibrary\steamapps\common\tModLoader
+6. Aguarde Exit code: 0. Reabra o BAT e escolha 3 para verificar.
+7. Abra o jogo pela Steam e faça o teste com mundo/personagem novos descrito no guia.
+
+Todos os jogadores e o host devem usar tModLoader 2026.9.3.1 e este mesmo perfil. Se a Steam instalar outra versão no futuro, não force o JSON nem ignore os hashes; será necessária nova validação.
+
+Fonte oficial da versão: https://github.com/tModLoader/tModLoader/releases/tag/v2026.09.3.1
+A versão foi publicada em 02/11/2026 às 22:13 no horário de Brasília (03/11 às 01:13 UTC).

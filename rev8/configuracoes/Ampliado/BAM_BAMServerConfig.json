@@ -1,0 +1,544 @@
+{
+  "KnownDefaultTiles": [
+    {
+      "Mod": "Terraria",
+      "Name": "Copper"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Tin"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Iron"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Lead"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Silver"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Tungsten"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Gold"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Platinum"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Demonite"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Crimtane"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Meteorite"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Hellstone"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Palladium"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Cobalt"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Mythril"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Orichalcum"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Titanium"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Adamantite"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Chlorophyte"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "LunarOre"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "DesertFossil"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Silt"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Slush"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Amethyst"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Topaz"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Sapphire"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Emerald"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Ruby"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "AmberStoneBlock"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Diamond"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "AerialiteOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "AerialiteOreDisenchanted"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "AstralOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "AuricOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "CryonicOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "ExodiumOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "HallowedOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "InfernalSuevite"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "PerennialOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "ScoriaOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "UelibloomOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "SeaPrism"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "SeaPrismBrick"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "Aquaite"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "AquaiteBare"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "Aquamarine"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsAmethyst"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsAquamarine"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsDiamond"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsEmerald"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsOpal"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsRuby"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsSapphire"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsTopaz"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "IllumiteChunk"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "LifeQuartz"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "LodeStone"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "Opal"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "SmoothCoal"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "SynthGold"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "SynthPlatinum"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "ThoriumOre"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "ValadiumChunk"
+    },
+    {
+      "Mod": "CatalystMod",
+      "Name": "MetanovaOre"
+    },
+    {
+      "Mod": "CalamityEntropyLegacy",
+      "Name": "VoidOreTile"
+    },
+    {
+      "Mod": "StarsAbove",
+      "Name": "CorundumOre"
+    }
+  ],
+  "BAMToggleActive": false,
+  "BAMVariantTiles": false,
+  "BAMInstantDrop": false,
+  "BAMRequireMana": false,
+  "BAMSyncTiles": true,
+  "BAMTileLimit": 200.0,
+  "BAMChainRange": 6.0,
+  "BAMActiveCooldown": 20.0,
+  "BAMWhitelist": [
+    {
+      "Mod": "Terraria",
+      "Name": "Copper"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Tin"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Iron"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Lead"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Silver"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Tungsten"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Gold"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Platinum"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Demonite"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Crimtane"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Meteorite"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Hellstone"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Palladium"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Cobalt"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Mythril"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Orichalcum"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Titanium"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Adamantite"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Chlorophyte"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "LunarOre"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "DesertFossil"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Silt"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Slush"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Amethyst"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Topaz"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Sapphire"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Emerald"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Ruby"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "AmberStoneBlock"
+    },
+    {
+      "Mod": "Terraria",
+      "Name": "Diamond"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "AerialiteOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "AerialiteOreDisenchanted"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "AstralOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "AuricOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "CryonicOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "ExodiumOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "HallowedOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "InfernalSuevite"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "PerennialOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "ScoriaOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "UelibloomOre"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "SeaPrism"
+    },
+    {
+      "Mod": "CalamityMod",
+      "Name": "SeaPrismBrick"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "Aquaite"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "AquaiteBare"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "Aquamarine"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsAmethyst"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsAquamarine"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsDiamond"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsEmerald"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsOpal"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsRuby"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsSapphire"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "DepthsTopaz"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "IllumiteChunk"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "LifeQuartz"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "LodeStone"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "Opal"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "SmoothCoal"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "SynthGold"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "SynthPlatinum"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "ThoriumOre"
+    },
+    {
+      "Mod": "ThoriumMod",
+      "Name": "ValadiumChunk"
+    },
+    {
+      "Mod": "CatalystMod",
+      "Name": "MetanovaOre"
+    },
+    {
+      "Mod": "CalamityEntropyLegacy",
+      "Name": "VoidOreTile"
+    },
+    {
+      "Mod": "StarsAbove",
+      "Name": "CorundumOre"
+    }
+  ],
+  "BAMDebugMode": false,
+  "BAMServerAuth": false
+}
