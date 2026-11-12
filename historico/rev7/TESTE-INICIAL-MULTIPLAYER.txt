@@ -1,0 +1,14 @@
+﻿TESTE INICIAL — MUNDO, PERSONAGEM, FUNÇÕES E MULTIPLAYER
+
+1. Use personagem Classic novo e mundo Large / Expert novo, seed comum, sem seeds especiais e sem Eternity/Revengeance/Death. Não use uma campanha valiosa no teste. Todos devem conferir a mesma revisão do ZIP, versão de tML e manifest.
+2. Primeiro entre sozinho. Abra o inventário, veja as bolsas iniciais, equipe/desequipe asas no Wing Slot e um acessório normal. Salve, saia e entre de novo: itens e posições devem persistir. More Accessories não está ativo nesta revisão.
+3. Monte Magic Storage pequeno. Deposite/retire itens comuns, consulte uma receita e fabrique. Confirme os mesmos itens após reiniciar; teste isso com os dois jogadores antes de guardar itens valiosos.
+4. Teste Recipe Browser, Boss Checklist, barra de chefe, cursor de chefe, WMITF e Munchies. Configure teclas distintas para ações de Fargo, Stars Above, LuiAFK, BAM, Shared Map e checklists. Minere uma área pequena com BAM; abra lojas e teste paginação do Mutant e Shop Expander quando os NPCs existirem. Confira Angler Shop após encontrar o Angler.
+5. Equipe um pet e um summon, depois use arma com projéteis. Observe erros, efeitos que ficam presos e consumo de recursos. Confronte um chefe inicial: os dois jogadores devem ver a mesma vida, morte, loot e atualização do checklist.
+6. Abra Multiplayer / Host & Play pelo tModLoader. O host cria/hospeda o mundo de teste; o segundo jogador instala a mesma revisão e entra pela Steam. Não confie só na sincronização automática: mods client-side e configurações locais também precisam estar corretos.
+7. Testem separadamente: sair e reconectar, morte/respawn, teleporte, boss kill, crafting e baús/Storage simultâneos. Compartilhem o mapa MANUALMENTE primeiro. Confiram persistência depois de o host salvar e reiniciar normalmente.
+8. Antes da campanha definitiva, testem uma ida e volta aos submundos de Stars Above e confiram progresso/chefes derrotados depois de voltar. As lutas de Catalyst/Fables/Wrath of the Machines e acessórios avançados exigem validação posterior; inicializar o servidor não testa isso.
+9. Meçam FPS com a mesma resolução/zoom/cena: parado, andando, pet/summon e chefe. Anotem FPS mínimo e consumo de RAM, depois alterem uma opção visual por vez. Compare cliente do host e cliente convidado; lag de rede e queda de FPS são problemas diferentes.
+10. Se falhar: salve cópias dos logs client.log/server.log e do relatório do instalador, anote mod/ação/horário e pare de usar o mundo de teste. Não remova mods de conteúdo do mundo definitivo para tentar corrigir. Reproduza em cópia/novo mundo e recarregue um grupo de cada vez.
+
+O teste automatizado entregue não conectou jogadores, não mediu FPS e não criou personagem pelo cliente gráfico. Esta lista é a validação funcional necessária no PC de destino, não uma afirmação de que já foi executada.

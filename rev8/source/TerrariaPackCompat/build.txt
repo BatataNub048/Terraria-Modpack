@@ -1,0 +1,7 @@
+displayName = Terraria Pack Compatibility
+author = Local modpack project
+version = 1.0.0
+side = Both
+weakReferences = UnofficialCalamityWhips@1.2.2
+sortAfter = UnofficialCalamityWhips
+includeSource = true

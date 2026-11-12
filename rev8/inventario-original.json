@@ -1,0 +1,1421 @@
+{
+  "schema": 1,
+  "referenceDate": "2026-11-04",
+  "inventoryKind": "original-request-reference-not-install-lock",
+  "originalSource": "Inventário fornecido pelo autor (referência local omitida).",
+  "targetTml": "2026.9.3.1",
+  "targetTerraria": "1.4.4.9",
+  "counts": {
+    "rev7Mapped": 42,
+    "original": 60,
+    "rev7Excluded": 18
+  },
+  "mods": [
+    {
+      "number": 1,
+      "originalName": "absoluteAquarian Utilities (SerousCommonLib)",
+      "internalName": "SerousCommonLib",
+      "workshopId": "2908170107",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2908170107",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.0.6.2",
+      "rev7Sha256": "3a55aeef1828cc369e8a4d3c087562d815e664c7e88e40cd5fe42c1c073d3a26",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "SerousCommonLib",
+        "version": "1.0.6.2",
+        "sha256": "3a55aeef1828cc369e8a4d3c087562d815e664c7e88e40cd5fe42c1c073d3a26",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "originalName": "AlchemistNPC Lite",
+      "internalName": "AlchemistNPCLite",
+      "workshopId": "2599842771",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2599842771",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.9.9",
+      "rev7Sha256": "2af2b21c10410811f9fe8cc8f1efd4a458b4ce07a555f5711bb18ce3309f92f7",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "AlchemistNPCLite",
+        "version": "1.9.9",
+        "sha256": "2af2b21c10410811f9fe8cc8f1efd4a458b4ce07a555f5711bb18ce3309f92f7",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "originalName": "Basic Automated Mining",
+      "internalName": "BAM",
+      "workshopId": "2838188064",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2838188064",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.3.1",
+      "rev7Sha256": "605b5faa881c1da6d369816983b1219b1a86944cac9c1cda60cc018bd33c3f99",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "BAM",
+        "version": "1.3.1",
+        "sha256": "605b5faa881c1da6d369816983b1219b1a86944cac9c1cda60cc018bd33c3f99",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 4,
+      "originalName": "Better Boss Health Bar for 1.4.4+",
+      "internalName": "BetterBossBarPlus",
+      "workshopId": "3018447913",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3018447913",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "0.9.2.4",
+      "rev7Sha256": "49a285308031c15293690ded4ead09e39d72820cdab799e1541836660240ff04",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "BetterBossBarPlus",
+        "version": "0.9.2.4",
+        "sha256": "49a285308031c15293690ded4ead09e39d72820cdab799e1541836660240ff04",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 5,
+      "originalName": "Better Zenith in Calamity",
+      "internalName": "calamityzeith",
+      "workshopId": "3024992349",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3024992349",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "0.6",
+      "rev7Sha256": "0a94429cd11820185283f449a83886e2ab2c7b604acb68b1c8d29f7b2006d9bb",
+      "required": [
+        "CalamityMod"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "calamityzeith",
+        "version": "0.6",
+        "sha256": "0a94429cd11820185283f449a83886e2ab2c7b604acb68b1c8d29f7b2006d9bb",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 6,
+      "originalName": "Boss Checklist",
+      "internalName": "BossChecklist",
+      "workshopId": "2669644269",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2669644269",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "2.2.4",
+      "rev7Sha256": "2fa4bb4240c969b5bb3d8e8354e0ce27e5595c2401e8008f4c6152dbac07b92d",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "BossChecklist",
+        "version": "2.2.4",
+        "sha256": "2fa4bb4240c969b5bb3d8e8354e0ce27e5595c2401e8008f4c6152dbac07b92d",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 7,
+      "originalName": "Boss Cursor",
+      "internalName": "BossCursor",
+      "workshopId": "2816694149",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2816694149",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "3.0.1",
+      "rev7Sha256": "d6c58b6b529e5af0678b4e8143f005fbca8d37ba33b306d80aab4e7fd4af26bb",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "BossCursor",
+        "version": "3.0.1",
+        "sha256": "d6c58b6b529e5af0678b4e8143f005fbca8d37ba33b306d80aab4e7fd4af26bb",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 8,
+      "originalName": "Calamity - Fargo's Souls DLC",
+      "internalName": null,
+      "workshopId": "3044249615",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3044249615",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Original DLC; author declares Thorium, Infernum, Overhaul and other boss-AI changes incompatible. Separate profile until integration exists.",
+      "rev8": {
+        "name": "FargowiltasCrossmod",
+        "version": "1.2.0.28",
+        "sha256": "42f501282977a570f22886decd25538f23e60c96a65357a8ce0bc28a39241be1",
+        "profiles": [
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 9,
+      "originalName": "Calamity Entropy",
+      "internalName": "CalamityEntropyLegacy",
+      "workshopId": "3800924812",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3800924812",
+      "rev7": "excluded",
+      "identityStatus": "explicit-legacy-substitution",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Legacy replacement preserves Calamity addon line. Original publication3316697363 is now Call of Void; not an equivalent rename/content guarantee.",
+      "rev8": {
+        "name": "CalamityEntropyLegacy",
+        "version": "3.39.1",
+        "sha256": "804bedb19feba9e4fbd30da114f7e83773d3b87024968bcbf977df61d847c971",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 10,
+      "originalName": "Calamity Fables",
+      "internalName": "CalamityFables",
+      "workshopId": "3449156562",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3449156562",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "0.1.24",
+      "rev7Sha256": "30b773adeb1dd0f4b8bc4a869005c7ac0170f6583564b709ebf4bf70d3273e8f",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "CalamityFables",
+        "version": "0.1.24",
+        "sha256": "30b773adeb1dd0f4b8bc4a869005c7ac0170f6583564b709ebf4bf70d3273e8f",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 11,
+      "originalName": "Calamity Inheritance",
+      "internalName": null,
+      "workshopId": "3410746873",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3410746873",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Historical recipe warning; re-test current binary with Ragnarok and LAP dependency3596210599.",
+      "rev8": {
+        "name": "CalamityInheritance",
+        "version": "2.0.4.19",
+        "sha256": "ed333dc130209ebbfa74c7c2ad6f9e660a5eb12cccdce644730533d64ec655b6",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 12,
+      "originalName": "Calamity Mage Addon",
+      "internalName": null,
+      "workshopId": "3415536524",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3415536524",
+      "rev7": "excluded",
+      "identityStatus": "unrecovered-historical-id",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Historical ID; original source/binary not recovered. Do not substitute a similarly named addon.",
+      "rev8": null
+    },
+    {
+      "number": 13,
+      "originalName": "Calamity Magic Storage",
+      "internalName": "CalamityMagicStorage",
+      "workshopId": "3499799348",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3499799348",
+      "rev7": "excluded",
+      "identityStatus": "explicit-backup-candidate",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Backup by SD, not original publication. Source NotTwikker/CalamityMagicStorage recovered at v0.1; backup advertises v0.3. Data-loss/upgrade risks need testing.",
+      "rev8": {
+        "name": "CalamityMagicStorage",
+        "version": "0.3",
+        "sha256": "4da4ef74a94fe341a235f90fdd89285376d77879fc9cf6574af18ffc059ec6f5",
+        "profiles": [
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 14,
+      "originalName": "Calamity Mod",
+      "internalName": "CalamityMod",
+      "workshopId": "2824688072",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2824688072",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "2.2.4",
+      "rev7Sha256": "d50fea9025f88ee2073c00e3482976ca1e6ea54d0b8770eb7810bb7b280397d6",
+      "required": [
+        "CalamityModMusic"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "CalamityMod",
+        "version": "2.2.4",
+        "sha256": "d50fea9025f88ee2073c00e3482976ca1e6ea54d0b8770eb7810bb7b280397d6",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 15,
+      "originalName": "Calamity Mod Extra Music",
+      "internalName": "ClamExtraMusic",
+      "workshopId": "2835214226",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2835214226",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "2.0.0",
+      "rev7Sha256": "a0461d998af4a3ab08e7dead852248c3f732cb84afacc464b18578abe315d61c",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "ClamExtraMusic",
+        "version": "2.0.0",
+        "sha256": "a0461d998af4a3ab08e7dead852248c3f732cb84afacc464b18578abe315d61c",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 16,
+      "originalName": "Calamity Mod Infernum Mode",
+      "internalName": "InfernumMode",
+      "workshopId": "3459129920",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3459129920",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Author localization warns multiplayer unsupported. Separate profile; not fixed merely by version update.",
+      "rev8": {
+        "name": "InfernumMode",
+        "version": "2.0.1.35",
+        "sha256": "a3c942b0ea77023f94740da24d23497ec65ae52feacc436eb21ddf91060bce66",
+        "profiles": [
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 17,
+      "originalName": "Calamity Mod Music",
+      "internalName": "CalamityModMusic",
+      "workshopId": "2824688266",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2824688266",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "2.1",
+      "rev7Sha256": "ca202bc18ae690d5ea7267b42c9ec8162241a19aafc9efdf40eff0a59eada9e5",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "CalamityModMusic",
+        "version": "2.1",
+        "sha256": "ca202bc18ae690d5ea7267b42c9ec8162241a19aafc9efdf40eff0a59eada9e5",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 18,
+      "originalName": "Calamity Overhaul",
+      "internalName": "CalamityOverhaul",
+      "workshopId": "3161388997",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3161388997",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "SelfRig issue121 and InnoVault dependency require specific validation.",
+      "rev8": {
+        "name": "CalamityOverhaul",
+        "version": "0.9209.2",
+        "sha256": "0ca74f7935a8f6ec7572cdc4e43c9a1118e62b57139891ad894044e2b0bb830f",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 19,
+      "originalName": "Calamity Ranger Expansion",
+      "internalName": "CalamityAmmo",
+      "workshopId": "2860270524",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2860270524",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.2.2.1",
+      "rev7Sha256": "a1cd56321a32403c4298e03041b981282dab10bd4ad553a13b8093c2b83df9df",
+      "required": [
+        "CalamityMod@2.2"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "CalamityAmmo",
+        "version": "1.2.2.1",
+        "sha256": "a1cd56321a32403c4298e03041b981282dab10bd4ad553a13b8093c2b83df9df",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 20,
+      "originalName": "Calamity Rarities",
+      "internalName": "CalamityRarities",
+      "workshopId": "2853817477",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2853817477",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.2.2",
+      "rev7Sha256": "e86231a441ffa4e7a3329d4b09148a4218936cc3ca1b45d9a3c2cbb063fb173d",
+      "required": [
+        "CalamityMod"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "CalamityRarities",
+        "version": "1.2.2",
+        "sha256": "e86231a441ffa4e7a3329d4b09148a4218936cc3ca1b45d9a3c2cbb063fb173d",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 21,
+      "originalName": "Calamity: Hunt of the Old God",
+      "internalName": null,
+      "workshopId": "3241967932",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3241967932",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Boss death/drop reports not reproduced in this pass.",
+      "rev8": {
+        "name": "CalamityHunt",
+        "version": "1.2.3",
+        "sha256": "c86055528833a72d4c456a897841c0c9efafd723e9648b403373adb041b9e73a",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 22,
+      "originalName": "Calamity: Wrath of the Machines",
+      "internalName": "WoTM",
+      "workshopId": "3486967746",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3486967746",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.0.5",
+      "rev7Sha256": "586ff7218594264f0119098d7546401ce97463ba65e16e59feb9fed561bfbab6",
+      "required": [
+        "CalamityMod",
+        "Luminance"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "WoTM",
+        "version": "1.0.5",
+        "sha256": "586ff7218594264f0119098d7546401ce97463ba65e16e59feb9fed561bfbab6",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 23,
+      "originalName": "Calamity's Vanities",
+      "internalName": "CalValEX",
+      "workshopId": "2824688804",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2824688804",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Historical invalid Calamity Mod.Call API; patch candidate.",
+      "rev8": {
+        "name": "CalValEX",
+        "version": "11.4.2.1",
+        "sha256": "45fa863d289d5455fe51ea563da34915b889be349080244910d4fd344205ea8b",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 24,
+      "originalName": "Catalyst Mod",
+      "internalName": "CatalystMod",
+      "workshopId": "2838015851",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2838015851",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.1.8",
+      "rev7Sha256": "043cd2656a0873d1b33ff7a3f7bfbd3c10bdc77a7d1e48832d61f373bbb97aaa",
+      "required": [
+        "CalamityMod"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "CatalystMod",
+        "version": "1.1.8",
+        "sha256": "043cd2656a0873d1b33ff7a3f7bfbd3c10bdc77a7d1e48832d61f373bbb97aaa",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 25,
+      "originalName": "Colored Calamity Relics",
+      "internalName": "ColoredCalRelics",
+      "workshopId": "2836588773",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2836588773",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Historical internal name verified in candidate logs. Visual function untested.",
+      "rev8": {
+        "name": "ColoredCalRelics",
+        "version": "1.0.8",
+        "sha256": "789fb078c80d3227707f60726b3864262b010985e109229eccbe8f722bb78261",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 26,
+      "originalName": "Craftable Calamity Items",
+      "internalName": "CraftableCalamityItems",
+      "workshopId": "2891420130",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891420130",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "4.7.12",
+      "rev7Sha256": "2ca479ae26edfe862adb4e9e2f1939055c565e434f639ce3d5b0dbb68875cd2e",
+      "required": [
+        "CalamityMod"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "CraftableCalamityItems",
+        "version": "4.7.12",
+        "sha256": "2ca479ae26edfe862adb4e9e2f1939055c565e434f639ce3d5b0dbb68875cd2e",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 27,
+      "originalName": "Fargo's Best of Both Worlds",
+      "internalName": "FargoSeeds",
+      "workshopId": "2802867430",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2802867430",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "0.5.3",
+      "rev7Sha256": "f175ab1b6deaffdd8f7534dfeba6341bd7f8a17601ddc61fc4bb1b900266c0d6",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "FargoSeeds",
+        "version": "0.5.3",
+        "sha256": "f175ab1b6deaffdd8f7534dfeba6341bd7f8a17601ddc61fc4bb1b900266c0d6",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 28,
+      "originalName": "Fargo's Equippable Inventory",
+      "internalName": "TooManySlots",
+      "workshopId": "2567018576",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2567018576",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Historical internal name from Rev7 audit; accessory effects untested.",
+      "rev8": {
+        "name": "TooManySlots",
+        "version": "2.0",
+        "sha256": "1603030e1099f051a0e3323e4b45c9123acec3eecd2016d587b156f1f2c645da",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 29,
+      "originalName": "Fargo's Music Mod",
+      "internalName": "FargowiltasMusic",
+      "workshopId": "2782337219",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2782337219",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "0.1.7.3",
+      "rev7Sha256": "a95bb3b47a4f99b7930310c0f02b6a3134207c077d54377f231f33bfdb84fcfa",
+      "required": [
+        "FargowiltasSouls@1.4"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "FargowiltasMusic",
+        "version": "0.1.7.3",
+        "sha256": "a95bb3b47a4f99b7930310c0f02b6a3134207c077d54377f231f33bfdb84fcfa",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 30,
+      "originalName": "Fargo's Mutant Mod",
+      "internalName": "Fargowiltas",
+      "workshopId": "2570931073",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2570931073",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "3.3.6.7",
+      "rev7Sha256": "08606f98ecd659923c9dd7dd1988e962a9cb5548f05665a1a15ccb8539656a12",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "Fargowiltas",
+        "version": "3.3.6.7",
+        "sha256": "08606f98ecd659923c9dd7dd1988e962a9cb5548f05665a1a15ccb8539656a12",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 31,
+      "originalName": "Fargo's Soul Mod",
+      "internalName": "FargowiltasSouls",
+      "workshopId": "2815540735",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2815540735",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.7.3.9",
+      "rev7Sha256": "d30c74544fae2ad4d53adccc0a9d42bfd9124fec96191740b980e77af1fa48ca",
+      "required": [
+        "Fargowiltas@3.3.6",
+        "Luminance@1.0.3"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "FargowiltasSouls",
+        "version": "1.7.3.9",
+        "sha256": "d30c74544fae2ad4d53adccc0a9d42bfd9124fec96191740b980e77af1fa48ca",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 32,
+      "originalName": "Fargo's Soul Mod Extras",
+      "internalName": "FargowiltasSoulsDLC",
+      "workshopId": "2906451681",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2906451681",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "0.6.2",
+      "rev7Sha256": "94b2d48c60815dc4effd25dab810abb2bb789e1f18707e0a4f40c343688beef7",
+      "required": [
+        "FargowiltasSouls@1.6"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "FargowiltasSoulsDLC",
+        "version": "0.6.2",
+        "sha256": "94b2d48c60815dc4effd25dab810abb2bb789e1f18707e0a4f40c343688beef7",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 33,
+      "originalName": "Infernum Mode Music",
+      "internalName": "InfernumModeMusic",
+      "workshopId": "3458992153",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3458992153",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "2.0.1.8",
+      "rev7Sha256": "6335e8865f77d4ee71db8c6a72798c3f6449021b5610c613fd8a3aa737b5bb87",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "InfernumModeMusic",
+        "version": "2.0.1.8",
+        "sha256": "6335e8865f77d4ee71db8c6a72798c3f6449021b5610c613fd8a3aa737b5bb87",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 34,
+      "originalName": "InnoVault",
+      "internalName": "InnoVault",
+      "workshopId": "3338554501",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3338554501",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Workshop identity confirmed; historical loader error is being investigated separately.",
+      "rev8": {
+        "name": "InnoVault",
+        "version": "1.9.102",
+        "sha256": "048beafe2903f99e3fb3c0f931e748a6999108029d2f8e3468f702314f7b511a",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 35,
+      "originalName": "LuiAFK Reborn",
+      "internalName": "miningcracks_take_on_luiafk",
+      "workshopId": "2831752947",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2831752947",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.2.5",
+      "rev7Sha256": "75f3d83a4f1bb1ed1b66326af86919222311d55dd03d4f13d5b167f74779c056",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "miningcracks_take_on_luiafk",
+        "version": "1.2.5",
+        "sha256": "75f3d83a4f1bb1ed1b66326af86919222311d55dd03d4f13d5b167f74779c056",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 36,
+      "originalName": "Luminance",
+      "internalName": "Luminance",
+      "workshopId": "3222493606",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3222493606",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.0.14",
+      "rev7Sha256": "47a1ce462a4b407efcb1f043419d58bb750cc60addffcb4e3e442612c0495cad",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "Luminance",
+        "version": "1.0.14",
+        "sha256": "47a1ce462a4b407efcb1f043419d58bb750cc60addffcb4e3e442612c0495cad",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 37,
+      "originalName": "Magic Storage",
+      "internalName": "MagicStorage",
+      "workshopId": "2563309347",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2563309347",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "0.7.0.11",
+      "rev7Sha256": "58b382ec0f9845f5430e5f4746642cb938a482dfacb3b62eac79b932fb6b959f",
+      "required": [
+        "SerousCommonLib@1.0.6.2"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "MagicStorage",
+        "version": "0.7.0.11",
+        "sha256": "58b382ec0f9845f5430e5f4746642cb938a482dfacb3b62eac79b932fb6b959f",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 38,
+      "originalName": "Magic Storage Starter Bag",
+      "internalName": "MSStarterBag",
+      "workshopId": "3281576339",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3281576339",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "3.2",
+      "rev7Sha256": "263d931c3ff80b94692e94e1a5f5a2637c6efec09dc5d34b99a3f80afbb21196",
+      "required": [
+        "MagicStorage"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "MSStarterBag",
+        "version": "3.2",
+        "sha256": "263d931c3ff80b94692e94e1a5f5a2637c6efec09dc5d34b99a3f80afbb21196",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 39,
+      "originalName": "Munchies - Calamity Addon",
+      "internalName": "Munchies_CalamityAddon",
+      "workshopId": "3312725122",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3312725122",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.3.1",
+      "rev7Sha256": "0886f3b974620df7fa15155c641d8ced48b0fcadc72e5c28615271735f7fad97",
+      "required": [
+        "Munchies@1.4",
+        "CalamityMod@2.0.4.3"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "Munchies_CalamityAddon",
+        "version": "1.3.1.1",
+        "sha256": "9ab99db59f27ed87ad328519fc5be77e05d3092aeca77880afafb0c181e77a17",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 40,
+      "originalName": "Munchies - Consumables Checklist",
+      "internalName": "Munchies",
+      "workshopId": "3310041861",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3310041861",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.4.2",
+      "rev7Sha256": "73eabbe0d3613dcb4f5210a7fcc6290150c951c4c9009738c7f78127f2450dfd",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "Munchies",
+        "version": "1.4.2",
+        "sha256": "73eabbe0d3613dcb4f5210a7fcc6290150c951c4c9009738c7f78127f2450dfd",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 41,
+      "originalName": "Ore Excavator",
+      "internalName": null,
+      "workshopId": "2565639705",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2565639705",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Author roadmap identifies duplication/desync; retain as experiment until functional tests.",
+      "rev8": {
+        "name": "OreExcavator",
+        "version": "0.8.9",
+        "sha256": "64d439086be53f53659ae7d4f11db55b3c9966a0b99075c71c8d95b114125489",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 42,
+      "originalName": "Pets Overhaul",
+      "internalName": "PetsOverhaul",
+      "workshopId": "2982195397",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2982195397",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "3.9.5",
+      "rev7Sha256": "0fbe3569bfce782a238d2e5106478daabb0dc8ed03671d55bf8c8d865f9d0d7b",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "PetsOverhaul",
+        "version": "3.9.5",
+        "sha256": "0fbe3569bfce782a238d2e5106478daabb0dc8ed03671d55bf8c8d865f9d0d7b",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 43,
+      "originalName": "Pets Overhaul: Calamity Addon",
+      "internalName": "PetsOverhaulCalamityAddon",
+      "workshopId": "3352461632",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3352461632",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.5.1.3",
+      "rev7Sha256": "5bf3eaaf119b3b275c1b7eb028a0480ab1f19e11b2caf0a34e04685395f92eb3",
+      "required": [
+        "PetsOverhaul@3.9",
+        "CalamityMod@2.2"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "PetsOverhaulCalamityAddon",
+        "version": "1.5.1.3",
+        "sha256": "5bf3eaaf119b3b275c1b7eb028a0480ab1f19e11b2caf0a34e04685395f92eb3",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 44,
+      "originalName": "Quality of Terraria",
+      "internalName": "ImproveGame",
+      "workshopId": "2797518634",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2797518634",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Requires SilkyUIFramework3403460014; FPS/UI reports are not proof of universal incompatibility.",
+      "rev8": {
+        "name": "ImproveGame",
+        "version": "1.8.2",
+        "sha256": "3b45b80ba870f51aaaf81e6918dc587765318305c50cf1f1caa307a9795fc45b",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 45,
+      "originalName": "readability",
+      "internalName": "AbilityToRead",
+      "workshopId": "3408499520",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3408499520",
+      "rev7": "included",
+      "identityStatus": "provisional-alias",
+      "rev7Version": "0.1",
+      "rev7Sha256": "14ecadd972e8233ce8a91ce892351cea31f162d1aa96f3cc8badab53a4202c79",
+      "required": [],
+      "note": "readability mapped by earlier audit to Ability To Read. Original ID not in attachment; alias unconfirmed.",
+      "rev8": {
+        "name": "AbilityToRead",
+        "version": "0.1",
+        "sha256": "14ecadd972e8233ce8a91ce892351cea31f162d1aa96f3cc8badab53a4202c79",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 46,
+      "originalName": "Recipe Browser",
+      "internalName": "RecipeBrowser",
+      "workshopId": "2619954303",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2619954303",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "0.12.0.3",
+      "rev7Sha256": "efc90e330ae365244ca8f024904351e6a97668ffd4fac7cd5d936d857eb6958b",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "RecipeBrowser",
+        "version": "0.12.0.3",
+        "sha256": "efc90e330ae365244ca8f024904351e6a97668ffd4fac7cd5d936d857eb6958b",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 47,
+      "originalName": "Shared World Map",
+      "internalName": "SharedMap",
+      "workshopId": "2815010161",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2815010161",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "0.1.5.1",
+      "rev7Sha256": "3d3593ecdeb7858c7210b27614fdc29d10b003ea7ab59d8d51f4e38496b63c7c",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "SharedMap",
+        "version": "0.1.5.1",
+        "sha256": "3d3593ecdeb7858c7210b27614fdc29d10b003ea7ab59d8d51f4e38496b63c7c",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 48,
+      "originalName": "Starter Bags",
+      "internalName": "StartingBags",
+      "workshopId": "2947735494",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2947735494",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "0.1.4.4",
+      "rev7Sha256": "0dbe8c564211d63163daa90c2129fbfa3572779ba09af0d8fce0ec9aab11b201",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "StartingBags",
+        "version": "0.1.4.4",
+        "sha256": "0dbe8c564211d63163daa90c2129fbfa3572779ba09af0d8fce0ec9aab11b201",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 49,
+      "originalName": "Subworld Library",
+      "internalName": "SubworldLibrary",
+      "workshopId": "2785100219",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2785100219",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "2.3.0.1",
+      "rev7Sha256": "d45218bc3381b3fe7b596ea7f42a4d07abd91cfcb661ae581d74601223e9ced1",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "SubworldLibrary",
+        "version": "2.3.0.1",
+        "sha256": "d45218bc3381b3fe7b596ea7f42a4d07abd91cfcb661ae581d74601223e9ced1",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 50,
+      "originalName": "The Amulet Of Many Minions",
+      "internalName": "AmuletOfManyMinions",
+      "workshopId": "2565770836",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2565770836",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Historical internal name from candidate logs; reload and player functionality untested.",
+      "rev8": {
+        "name": "AmuletOfManyMinions",
+        "version": "0.16.3",
+        "sha256": "7d1c78d781ad9d17afcde458e2349f5d656d9a5774f0e235a78d53b88b0f2963",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 51,
+      "originalName": "The Stars Above",
+      "internalName": "StarsAbove",
+      "workshopId": "2563862309",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2563862309",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "2.1.8.4",
+      "rev7Sha256": "5d9ae34ab3a405179e368fc3b949f20d428d2d232052348e0e2b1886baa9c74c",
+      "required": [
+        "SubworldLibrary"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "StarsAbove",
+        "version": "2.1.8.4",
+        "sha256": "5d9ae34ab3a405179e368fc3b949f20d428d2d232052348e0e2b1886baa9c74c",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 52,
+      "originalName": "Thorium + Calamity Convergence Mod",
+      "internalName": "ThoriamityConvergenceREDUX",
+      "workshopId": "3106201538",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3106201538",
+      "rev7": "excluded",
+      "identityStatus": "redux-candidate-original-id-unverified",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "REDUX build.txt displayName is Thorium + Calamity Convergence Mod, matching original list. Exact originally installed publication still unverified.",
+      "rev8": {
+        "name": "ThoriamityConvergenceREDUX",
+        "version": "1.0",
+        "sha256": "e3e08345188c566aefdfd2ed234bfd3b8fbb74b7e0b074b6d8e22b52636d3372",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 53,
+      "originalName": "Thorium Mod",
+      "internalName": "ThoriumMod",
+      "workshopId": "2909886416",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2909886416",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.7.2.8",
+      "rev7Sha256": "8bfb470598de2c46629a2fbd29981b3a73c2e285d464a02f3681a91483331459",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "ThoriumMod",
+        "version": "1.7.2.8",
+        "sha256": "8bfb470598de2c46629a2fbd29981b3a73c2e285d464a02f3681a91483331459",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 54,
+      "originalName": "Unofficial Calamity Bard & Healer",
+      "internalName": "CalamityBardHealer",
+      "workshopId": "3142064272",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3142064272",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "0.13.10",
+      "rev7Sha256": "be0842e5e3eee63ca4866b822b52bf0bccc9b07c5fddc5137d6e986e4d8b55a1",
+      "required": [
+        "ThoriumMod",
+        "CalamityMod"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "CalamityBardHealer",
+        "version": "0.13.10",
+        "sha256": "be0842e5e3eee63ca4866b822b52bf0bccc9b07c5fddc5137d6e986e4d8b55a1",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 55,
+      "originalName": "Unofficial Calamity Whips",
+      "internalName": "UnofficialCalamityWhips",
+      "workshopId": "2839001756",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2839001756",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "Historical banner warning; narrow patch candidate.",
+      "rev8": {
+        "name": "UnofficialCalamityWhips",
+        "version": "1.2.2",
+        "sha256": "f566fab0f21bd1858b1b3bbbabd0d13ba1b56b87ba0a15732518b2a372ac9878",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 56,
+      "originalName": "Unofficial Fargo's x Shop Expander",
+      "internalName": "FaeFargoShopCompat",
+      "workshopId": "3460220112",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3460220112",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "0.2",
+      "rev7Sha256": "eb8f5baf35dcea18b4fc930459579a7c22ba9e540cc5f597f29c359578fff0a4",
+      "required": [
+        "Fargowiltas"
+      ],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "FaeFargoShopCompat",
+        "version": "0.2",
+        "sha256": "eb8f5baf35dcea18b4fc930459579a7c22ba9e540cc5f597f29c359578fff0a4",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 57,
+      "originalName": "Vanilla Calamity Mod Music",
+      "internalName": "UnCalamityModMusic",
+      "workshopId": "2816188633",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2816188633",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "2.1.3",
+      "rev7Sha256": "bd476b6a7652b5c221f2d9b222981594a1fb423f3cf25f366b47b981cbef009d",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "UnCalamityModMusic",
+        "version": "2.1.3",
+        "sha256": "bd476b6a7652b5c221f2d9b222981594a1fb423f3cf25f366b47b981cbef009d",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 58,
+      "originalName": "Which Mod Is This From? (WMITF)",
+      "internalName": "WMITF",
+      "workshopId": "2563851005",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2563851005",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "2.7.1",
+      "rev7Sha256": "fbd1a1560607366a4579091d53a0c81d551a0b94f44c67c5e3e5ffbdc37e53c0",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "WMITF",
+        "version": "2.7.1",
+        "sha256": "fbd1a1560607366a4579091d53a0c81d551a0b94f44c67c5e3e5ffbdc37e53c0",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 59,
+      "originalName": "Wing Slot Extra",
+      "internalName": "WingSlotExtra",
+      "workshopId": "2597324266",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2597324266",
+      "rev7": "included",
+      "identityStatus": "mapped-from-rev7",
+      "rev7Version": "1.4.9",
+      "rev7Sha256": "bd7db8ef67ee8260d2171ccb74796c7c0744350415282c9a7794e4c8450c4db3",
+      "required": [],
+      "note": "Existing Rev7 mapping retained. Current gameplay not certified by this inventory.",
+      "rev8": {
+        "name": "WingSlotExtra",
+        "version": "1.4.9",
+        "sha256": "bd7db8ef67ee8260d2171ccb74796c7c0744350415282c9a7794e4c8450c4db3",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    },
+    {
+      "number": 60,
+      "originalName": "More Accessory Slots (More Accessories)",
+      "internalName": "MoreAccessories",
+      "workshopId": "2825583251",
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=2825583251",
+      "rev7": "excluded",
+      "identityStatus": "historical-id-or-primary-source",
+      "rev7Version": null,
+      "rev7Sha256": null,
+      "required": null,
+      "note": "ID confirmed by prior user context; disable loadout sharing for initial test, no claim other reports fixed.",
+      "rev8": {
+        "name": "MoreAccessories",
+        "version": "1.5.1",
+        "sha256": "b6fa85a156359af96e65016ac4db29c56e58e5a4441a1de5e312cf383a467b8c",
+        "profiles": [
+          "Ampliado",
+          "TodosRecuperados"
+        ]
+      }
+    }
+  ],
+  "rev7Additional": [
+    {
+      "name": "TerrariaPackGuard",
+      "title": "Terraria Pack - Worldgen Guard (local)",
+      "workshopId": "local:TerrariaPackGuard",
+      "version": "1.0.0"
+    },
+    {
+      "name": "FargosSoulsModDLCRecreated",
+      "title": "Fargos Souls Mod Old DLC Recreation",
+      "workshopId": "3437488846",
+      "version": "0.49"
+    },
+    {
+      "name": "RagnarokMod",
+      "title": "Ragnarok Mod",
+      "workshopId": "3114886209",
+      "version": "1.6.0.10"
+    },
+    {
+      "name": "NoFishingQuests",
+      "title": "Angler Shop",
+      "workshopId": "2563082541",
+      "version": "3.2.0.5"
+    },
+    {
+      "name": "ShopExpander",
+      "title": "Shop Expander",
+      "workshopId": "2828370879",
+      "version": "1.8.1"
+    },
+    {
+      "name": "AutoTrash",
+      "title": "Auto Trash",
+      "workshopId": "2565540604",
+      "version": "0.8.1.1"
+    },
+    {
+      "name": "BetterZoom",
+      "title": "Better Zoom",
+      "workshopId": "2562953970",
+      "version": "5.3.0"
+    }
+  ],
+  "extraDependencies": [
+    {
+      "requestedBy": "Calamity Inheritance",
+      "workshopId": "3596210599",
+      "name": "Lilac Arcane Pack"
+    },
+    {
+      "requestedBy": "Quality of Terraria",
+      "workshopId": "3403460014",
+      "name": "SilkyUIFramework"
+    }
+  ],
+  "newTestsPerformed": [],
+  "warning": "Reference only. Null binary metadata means not yet inspected here. Do not generate enabled.json solely from this file."
+}

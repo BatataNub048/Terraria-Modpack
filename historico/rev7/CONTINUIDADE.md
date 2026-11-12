@@ -1,0 +1,9 @@
+# Continuidade — revisão 7
+
+Em 03/11/2026 o usuário enviou imagem da rev6 recusando tModLoader 2026.9.3.1 em E:\SteamLibrary\steamapps\common\tModLoader. O caminho era correto, mas o alvo estava preso em 2026.8.3.0. Consultada a release oficial v2026.09.3.1, baixada e conferida pelo SHA256 divulgado no GitHub. Testes em pastas isoladas, sem alterar o jogo instalado nem saves reais.
+
+A rev7 mantém os 49 mods (48 Workshop + TerrariaPackGuard), versões e hashes da rev6, além dos mesmos presets. Muda o alvo do tModLoader para 2026.9.3.1 e o número da revisão. O erro do prompt agora diz “Instalacao nao aceita”, pois uma falha de versão não significa caminho inválido. Conferência de versões permanece estrita. Backup de cópias locais é a opção 7; verificar é opção 3. O PC de destino é outro PC e não foi acessado nesta auditoria.
+
+Usuário confirmou multiplayer e quer incluir mods solicitados, excluindo problemas técnicos, não apenas balanceamento/redundância. A seleção e as exclusões da rev6 continuam descritas em MODS-E-COMPATIBILIDADE.md; não foram apagadas nem classificadas como bugs corrigidos pelo tML novo. More Accessories de Aeryn 2825583251 permanece fora provisoriamente por relatos. DLC oficial Calamity/Fargo continua fora devido a Thorium. Old DLC Recreation, Ragnarok e Bard/Healer permanecem. Census foi retirado para manter LuiAFK. Magic Storage base é distinto do addon Calamity Magic Storage indisponível.
+
+Leia VERIFICACAO.md para os testes novos e suas limitações. Não interpretar geração/reabertura de mundo no servidor como certificação multiplayer, cliente gráfico, campanha ou FPS. Os ZIPs rev5/rev6 foram preservados. Nenhum caminho da máquina de teste deve ser usado como destino fixo do usuário. Para reavaliar mods, use manifest.lock.json, audit-decisions.json, logs e fontes indicadas.

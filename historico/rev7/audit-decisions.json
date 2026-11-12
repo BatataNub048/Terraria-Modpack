@@ -1,0 +1,149 @@
+[
+  {
+    "name": "Calamity Entropy Legacy",
+    "workshopId": "3800924812",
+    "version": "3.39 + InnoVault 1.9.102",
+    "evidence": "Teste local",
+    "reason": "A biblioteca obrigatória InnoVault registrou ERROR: OutlineShader marcado com VaultLoadenAttribute sem setter. Não impediu o início da geração, mas ficou fora até esclarecer/corrigir o carregamento do shader. Não é prova de crash. O Entropy antigo tornou-se Call of Void; Legacy preserva o addon antigo, com manutenção sem conteúdo novo."
+  },
+  {
+    "name": "Calamity Inheritance",
+    "workshopId": "3410746873",
+    "version": "2.0.4.19",
+    "evidence": "Aviso do autor",
+    "reason": "Receitas de armas afetadas por mudanças de receitas do Calamity. Autor sugere desligar a modificação de receitas; esse contorno não foi validado com Ragnarok. Excluído provisoriamente. Exigiria também Lilac Arcane Pack (LAP), ID 3596210599."
+  },
+  {
+    "name": "Calamity Mage Addon",
+    "workshopId": "3415536524",
+    "version": "Não disponível",
+    "evidence": "Falha de obtenção",
+    "reason": "SteamCMD devolveu FileNotFound; sem binário oficial validável. Não foi classificado como incompatível. Não substituído por outro mod de nome semelhante."
+  },
+  {
+    "name": "Calamity Magic Storage",
+    "workshopId": "3500965731",
+    "version": "Original não localizado",
+    "evidence": "Disponibilidade não resolvida",
+    "reason": "Só foi localizada uma tradução que reproduz avisos de perda de progresso e duplicação de upgrades. O link é da tradução, NÃO do addon original. Sem original atual verificável, não incluído; isto não afeta Magic Storage base e SerousCommonLib, que permanecem."
+  },
+  {
+    "name": "Infernum Mode",
+    "workshopId": "3459129920",
+    "version": "2.0.1.35",
+    "evidence": "Aviso explícito do autor no binário",
+    "reason": "A localização do próprio mod avisa que multiplayer não é suportado e pode não ser totalmente jogável. Excluído porque este pack também será multiplayer. Infernum Music funciona separadamente e permanece."
+  },
+  {
+    "name": "Calamity Overhaul",
+    "workshopId": "3161388997",
+    "version": "0.9209",
+    "evidence": "Bug aberto + dependência com erro local",
+    "reason": "Issue 121 do repositório oficial registra SelfRig sem funcionar; além disso exige InnoVault, que gerou erro no teste. Não usamos a incompatibilidade do DLC oficial como prova de incompatibilidade com Souls base. Ver https://github.com/hocha113/CalamityOverhaul/issues/121 ."
+  },
+  {
+    "name": "Calamity: Hunt of the Old God",
+    "workshopId": "3241967932",
+    "version": "1.2.3",
+    "evidence": "Relatos, não reproduzidos",
+    "reason": "Relatos de outubro de 2026: morte por debuff sem contagem/drop e chefe desaparecendo com 1 HP. Mantido fora provisoriamente por risco de progressão; não é incompatibilidade universal comprovada."
+  },
+  {
+    "name": "Calamity's Vanities",
+    "workshopId": "2824688804",
+    "version": "11.4.2",
+    "evidence": "Teste local + inspeção do binário",
+    "reason": "Repetidas chamadas SetDamageReductionSpecific rejeitadas pelo Calamity 2.2.4. A string foi localizada em CalValEX.dll e os avisos aparecem no carregamento. O servidor continuou; trata-se de integração parcialmente quebrada, não crash comprovado."
+  },
+  {
+    "name": "Colored Calamity Relics",
+    "workshopId": "2836588773",
+    "version": "1.0.8",
+    "evidence": "Relatos, não reproduzidos visualmente",
+    "reason": "Comentários de junho/julho de 2026 dizem que deixou de funcionar e pedem atualização para Calamity 2.2; última publicação observada em novembro de 2025. Carregou no servidor, mas isso não verifica a recoloração. Exclusão provisória."
+  },
+  {
+    "name": "Fargo's Equippable Inventory",
+    "workshopId": "2567018576",
+    "version": "2.0 / TooManySlots",
+    "evidence": "Relatos funcionais, não reproduzidos",
+    "reason": "Relatos de efeitos/enchantments de Souls não funcionando quando os acessórios estão nos inventários/bancos adicionais. Não foi excluído simplesmente por ser forte demais."
+  },
+  {
+    "name": "Ore Excavator",
+    "workshopId": "2565639705",
+    "version": "0.8.9",
+    "evidence": "Reconhecimento de bug na Workshop",
+    "reason": "Duplicação de móveis reconhecida; relato de travamento com Magic Storage não foi reproduzido. BAM permanece como minerador. Não confundir a correção de tag 1.4.3 com uma correção comprovada do bug."
+  },
+  {
+    "name": "Quality of Terraria",
+    "workshopId": "2797518634",
+    "version": "1.8.2",
+    "evidence": "Relatos de desempenho/UI, não medidos aqui",
+    "reason": "Comentários recentes apontam perda de FPS com bolsas e problemas de tela preta/UI em combinações com Calamity. Requer SilkyUIFramework (3403460014); ambos ficam fora. Não há benchmark local que quantifique a perda neste pack."
+  },
+  {
+    "name": "The Amulet Of Many Minions",
+    "workshopId": "2565770836",
+    "version": "0.16.3",
+    "evidence": "Relatos de falhas, não reproduzidos em jogo",
+    "reason": "Página tem relatos de crash ao recarregar e Follower Compass sem funcionar, além de relatos de setembro de 2026 de mod quebrado. Carregou no teste dedicado, mas funções de jogador/reload gráfico não foram validadas; fora provisoriamente."
+  },
+  {
+    "name": "Unofficial Calamity Whips",
+    "workshopId": "2839001756",
+    "version": "1.2.2",
+    "evidence": "Teste local",
+    "reason": "tML avisou que ScraperOfStarsTail tem Banner/BannerItem ausente ou conflitante e pede correção ao desenvolvedor. Excluído pelo critério de evitar bugs conhecidos. Não foi excluído só pela história de fusão com Catalyst."
+  },
+  {
+    "name": "More Accessory Slots — Aeryn",
+    "workshopId": "2825583251",
+    "version": "1.5.1",
+    "evidence": "Aviso do autor + relatos de usuário",
+    "reason": "É exatamente o ID informado pelo usuário. O autor confirma acessórios que deixam de funcionar com loadouts e sugere EnableLoadoutSupport=false. Esse contorno foi preparado, mas não cobre relatos de maio/junho de lag e agosto/outubro de falha na seleção de personagem. Fora provisoriamente pelo critério pedido; não alegamos ter reproduzido esses sintomas."
+  },
+  {
+    "name": "Census — Town NPC Checklist",
+    "workshopId": "2687866031",
+    "version": "0.5.2.8 + LuiAFK 1.2.5",
+    "evidence": "Teste local reproduzido",
+    "reason": "Duas chamadas antigas TownNPCCondition do LuiAFK causaram ERROR no Census. Removemos Census para manter LuiAFK. O carregamento continuou, mas a integração de condições dos NPCs falhou."
+  },
+  {
+    "name": "tOptimization",
+    "workshopId": "3785078221",
+    "version": "0.41.1",
+    "evidence": "Relatos de regressão",
+    "reason": "Relatos de hitbox/Last Prism e falta de validação do conjunto; removido inclusive dos opcionais desta revisão. Não é necessário para carregar o pack."
+  },
+  {
+    "name": "Calamity — Fargo Souls DLC oficial",
+    "workshopId": "3044249615",
+    "version": "Não selecionado",
+    "evidence": "Incompatibilidade declarada",
+    "reason": "Thorium é listado como incompatível. Old DLC Recreation permanece como integração de itens; não substitui a adaptação de IA/dificuldade do oficial."
+  },
+  {
+    "name": "Thorium + Calamity Convergence REDUX",
+    "workshopId": "3106201538",
+    "version": "Não selecionado",
+    "evidence": "Compatibilidade atual não estabelecida",
+    "reason": "Publicação antiga, sobreposição de receitas/progressão com Ragnarok e sem validação para este lock. Não declarado universalmente quebrado. É uma pendência técnica, não exclusão por balanceamento."
+  },
+  {
+    "name": "High FPS Support",
+    "workshopId": "3119712528",
+    "version": "Não selecionado",
+    "evidence": "Avisos de desenho/jitter",
+    "reason": "Não resolve automaticamente o custo da simulação; há avisos de problemas visuais com conteúdo customizado. Fora desta seleção."
+  },
+  {
+    "name": "Subworld Library Unofficial Patch",
+    "workshopId": "3476658602",
+    "version": "Obsoleto",
+    "evidence": "Aviso do autor",
+    "reason": "Patch marcado obsoleto: a biblioteca atual torna desnecessário o contorno antigo. Não adicionar patch antigo à versão atual."
+  }
+]
