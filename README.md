@@ -19,5 +19,6 @@ Para preparar uma instalação, obtenha os artefatos exatos pelos meios autoriza
 - [Guia original da Rev8](rev8/README.md)
 - [Relatório de compatibilidade](rev8/RESULTADOS.md)
 - [Desempenho e limites dos ensaios](rev8/DESEMPENHO-POS-XMP.md)
+- [Servidor local e launcher de um clique](rev8/SERVIDOR-LOCAL.md)
 - [Rev7 arquivada](historico/rev7/README.md)
 - [Instruções para manutenção](AGENTS.md)

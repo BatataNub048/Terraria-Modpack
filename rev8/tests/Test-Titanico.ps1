@@ -5,6 +5,7 @@ Import-Module (Join-Path $pack 'lib\WorldSafety.psm1') -Force
 Import-Module (Join-Path $pack 'lib\Pack.psm1') -Force
 $fixtures = Join-Path ([IO.Path]::GetTempPath()) ('TerrariaTitanSafety-' + [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $fixtures | Out-Null
+$fixtureId = [guid]'00112233-4455-4677-8899-aabbccddeeff'
 
 function New-WorldFixture([string]$Name, [int]$Width, [int]$Height) {
     $path = Join-Path $fixtures $Name
@@ -22,7 +23,7 @@ function New-WorldFixture([string]$Name, [int]$Width, [int]$Height) {
         $writer.Write('Fixture')
         $writer.Write('seed')
         $writer.Write([uint64]0)
-        $writer.Write([byte[]]::new(16))
+        $writer.Write($fixtureId.ToByteArray())
         foreach ($value in @(1,0,($Width*16),0,($Height*16),$Height,$Width,1)) { $writer.Write([int]$value) }
         $stream.SetLength(512)
     }
@@ -35,6 +36,7 @@ $titan = New-WorldFixture 'titan.wld' 16800 4800
 $legacy = New-WorldFixture 'legacy.wld' 16000 8000
 Assert-PackWorldFile $normal $false
 Assert-PackWorldFile $titan $true
+if ((Get-PackWorldHeader $titan).UniqueId -ne $fixtureId) { throw 'World GUID was not decoded correctly.' }
 foreach ($world in @($titan,$legacy)) {
     $blocked = $false
     try { Assert-PackWorldFile $world $false } catch { $blocked = $_.Exception.Message -match 'bloqueado' }
@@ -59,5 +61,5 @@ foreach ($base in @('Ampliado','TodosRecuperados')) {
     $expandedBasePresets = ConvertTo-Json -InputObject @($expanded.presets | Where-Object file -ne TitanWorlds_TitanWorldServerConfig.json) -Depth 30 -Compress
     if ($basePresets -cne $expandedBasePresets) { throw "Original presets changed in $base-Titanico" }
 }
-Write-Output 'Passed: normal world, Titan world, legacy Titan rejection, truncated file, exact profile inheritance, LuiAFK and presets.'
+Write-Output 'Passed: world GUID, normal world, Titan world, legacy Titan rejection, truncated file, exact profile inheritance, LuiAFK and presets.'
 Write-Output "Temporary fixtures: $fixtures"
