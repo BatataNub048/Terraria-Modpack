@@ -10,7 +10,7 @@ O arquivo indicado por `-config` no log continha `secure=0` e `secure=1`. O mét
 
 ## Correção
 
-`Servidor-Amigos.ps1` escreve somente `secure=0` para Vanity e somente `secure=1` para Base. O arquivo é regenerado a cada inicialização do servidor. A correção não exige editar o arquivo gerado, recompilar mods ou modificar o binário do tModLoader. O bind privado, o limite de jogadores e a desativação de UPnP permanecem como antes. `secure=0` deixa inativas as verificações vanilla de spam de projéteis, blocos e líquidos nessa instância Vanity. Use somente com jogadores de confiança na rede privada.
+`Servidor-Amigos.ps1` escreve somente `secure=0` para Vanity e somente `secure=1` para Base. O arquivo é regenerado a cada inicialização do servidor. A correção não exige editar o arquivo gerado, recompilar mods ou modificar o binário do tModLoader. O bind privado e a desativação de UPnP são preservados. O limite de jogadores é configurado separadamente por `-MaxPlayers`. `secure=0` deixa inativas as verificações vanilla de spam de projéteis, blocos e líquidos nessa instância Vanity. Use somente com jogadores de confiança na rede privada.
 
 ## Teste A/B em cópias descartáveis
 

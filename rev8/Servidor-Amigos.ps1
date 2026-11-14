@@ -4,7 +4,8 @@ param(
     [ValidateSet('Preparar','Verificar','Servidor','Cliente')][string]$Modo='Servidor',
     [ValidateSet('Base','Vanity')][string]$Perfil='Base',
     [ValidateSet('Tailscale','Local')][string]$Rede='Tailscale',
-    [string]$PastaTml=''
+    [string]$PastaTml='',
+    [ValidateRange(2,8)][int]$MaxPlayers=4
 )
 $ErrorActionPreference='Stop'
 Import-Module (Join-Path $PSScriptRoot 'lib/Pack.psm1') -Force
@@ -112,11 +113,10 @@ try {
             if((Get-PackHash $item.FullName) -ne (Get-PackHash (Get-PackPath $root $relative))){throw 'Falha na verificacao do backup.'}
         }
         $cfg=Get-PackPath $root 'serverconfig-amigos.txt'
-        # Terraria only handles secure=1 as an enable switch. A later secure=0 cannot undo it.
-        $secure=if($Perfil -eq 'Vanity'){'secure=0'}else{'secure=1'}
-        @("world=$world",'maxplayers=2','upnp=0',"port=$port","ip=$ip",$secure)|Set-Content -LiteralPath $cfg -Encoding UTF8
+        New-PackFriendServerConfig -World $world -Address $ip -Port $port -Profile $Perfil -MaxPlayers $MaxPlayers |
+            Set-Content -LiteralPath $cfg -Encoding UTF8
         $arguments+=@('-server','-config',$cfg,'-ip',$ip,'-port',"$port",'-noupnp')
-        Write-Host "Servidor de dois jogadores: ${ip}:$port ($Perfil)."
+        Write-Host "Servidor para ate $MaxPlayers jogadores: ${ip}:$port ($Perfil)."
         Write-Host 'Aguarde Listening. Em outro terminal, execute este script com -Modo Cliente e os mesmos -Perfil e -Rede.'
         Write-Host 'Para encerrar, saia dos clientes e digite exit. Aguarde o salvamento. Nao use exit-nosave.'
     }else{

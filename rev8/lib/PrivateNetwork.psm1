@@ -39,4 +39,17 @@ function Assert-PackPrivateListener([int]$Port,[string]$Address,[string]$SaveRoo
        $process.CommandLine -notmatch $saveArg -or ($OwnerPid -and $process.ProcessId -ne $OwnerPid)) {throw 'A porta pertence a outro processo ou perfil.'}
     return $true
 }
-Export-ModuleMember -Function Assert-PackPrivateIPv4,Get-PackTailscaleIPv4,Assert-PackPrivateListener
+function New-PackFriendServerConfig {
+    param(
+        [Parameter(Mandatory)][string]$World,
+        [Parameter(Mandatory)][string]$Address,
+        [Parameter(Mandatory)][int]$Port,
+        [Parameter(Mandatory)][ValidateSet('Base','Vanity')][string]$Profile,
+        [Parameter(Mandatory)][ValidateRange(2,8)][int]$MaxPlayers
+    )
+    # Terraria only reads secure=1 as an enable switch. Emit exactly one setting.
+    $secure=if($Profile -eq 'Vanity'){'secure=0'}else{'secure=1'}
+    @("world=$World","maxplayers=$MaxPlayers",'upnp=0',"port=$Port","ip=$Address",$secure)
+}
+
+Export-ModuleMember -Function Assert-PackPrivateIPv4,Get-PackTailscaleIPv4,Assert-PackPrivateListener,New-PackFriendServerConfig

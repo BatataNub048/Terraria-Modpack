@@ -45,7 +45,13 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Servidor-Amigos.ps1 -Modo 
 # Use -Perfil Vanity nos dois comandos para o experimento.
 ```
 
-O anfitrião também conecta pelo IP do Tailscale. O cliente local confere endereço, porta e processo do servidor antes de conectar. Há no máximo dois jogadores. Não execute simultaneamente outro servidor Rev8: Subworld Library usa canais compartilhados.
+O anfitrião também conecta pelo IP do Tailscale. O cliente local confere endereço, porta e processo do servidor antes de conectar. O servidor de amigos aceita até quatro jogadores por padrão, incluindo o anfitrião. Use `-MaxPlayers` no comando de servidor para escolher de 2 a 8 vagas. Por exemplo:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Servidor-Amigos.ps1 -Modo Servidor -Perfil Vanity -MaxPlayers 6
+```
+
+O limite vale para Base e Vanity. Reinicie o servidor para aplicar outro valor. Cada participante precisa de acesso autorizado pelo Tailscale. O teste cobre a configuração gerada. Uma sessão com quatro clientes conectados ainda não foi testada. Execute somente um servidor Rev8 por vez, pois Subworld Library usa canais compartilhados.
 
 Para teste somente neste PC, acrescente `-Rede Local` ao servidor e ao cliente. Isso mantém a nova cópia em loopback; não altera o servidor solo antigo.
 
