@@ -12,6 +12,23 @@ Todos exigem Terraria 1.4.4.9 / tModLoader 2026.9.3.1. Os clientes são configur
 
 ## Abrir o Vanity com dois cliques
 
+**Anfitrião e amigos usam `Play Rev8 Multiplayer.bat`**, na pasta `rev8`. Extraia a atualização inteira antes de abrir o arquivo e mantenha os `.ps1`, `lib`, `profiles` e `configuracoes` ao lado dele. O menu usa o Vanity por padrão. Escolha Base se o convite indicar Base.
+
+### Preparação inicial
+
+1. Cada jogador instala Terraria, [tModLoader 2026.9.3.1 para Terraria 1.4.4.9](https://github.com/tModLoader/tModLoader/releases/tag/v2026.09.3.1) e [Tailscale para Windows](https://tailscale.com/download/windows). Inicie o tModLoader uma vez para instalar o runtime, depois feche. O menu detecta a instalação Steam ou pede a pasta que contém `tModLoader.dll` e salva a escolha.
+2. O anfitrião compartilha a máquina do servidor com os amigos pelo console do Tailscale. Cada amigo entra na própria conta e aceita o convite. Restrinja o acesso na política do Tailscale ao TCP **17791** para Vanity ou **17790** para Base. O menu mantém o servidor vinculado ao IP Tailscale e desativa UPnP. [Passo a passo oficial do Tailscale](https://tailscale.com/docs/use-cases/personal-or-at-home-use/share-private-game-server)
+3. O anfitrião precisa ter o servidor solo Rev8 preparado em `saves/ServidorLocal-Desempenho`, com um mundo e um personagem locais, e o `payload/Antisocial.tmod` auditado ao criar Vanity. O menu oferece preparar a cópia de amigos. Ela passa a ter progresso independente.
+4. Em cada PC de amigo, escolha **3 - Check / Repair Setup**, selecione o perfil do convite e **Friend**. Para preparar o perfil, use os arquivos exatos em `rev8/payload` (caminhos `payloadFile` do manifest ou `<nome-interno>.tmod`) ou instale os itens oficiais na Workshop. O menu também procura cópias já instaladas nas bibliotecas Steam e exige os hashes auditados. Se Antisocial estiver ausente, o instalador pode baixá-lo do item oficial via SteamCMD. Os links e IDs dos itens estão nos [manifests](profiles). Obtenha as variantes locais dos autores ou reproduza as versões seguindo os [patches e suas origens](patches/README.md). Baixe ou compartilhe um binário de terceiro somente quando a fonte e a autorização permitirem. O GitHub fornece scripts, código e manifests.
+
+### Jogar
+
+- **Anfitrião:** escolha **1 - Host a Game**, aceite **Vanity** e **4** jogadores ou selecione de **2 a 8**, contando você. Depois que o listener privado estiver pronto, o menu mostra o IP e a porta e pode abrir seu jogo. Compartilhe o conteúdo do convite ou o arquivo `%LOCALAPPDATA%\TerrariaRev8\Multiplayer\invite-Vanity.txt` somente com os convidados. O arquivo contém perfil, IPv4 e porta. Deixe o console dedicado aberto. Ao terminar, saia dos clientes, digite `exit` no console do servidor e aguarde o salvamento.
+- **Amigo:** escolha **2 - Join a Friend**, use o perfil do convite e cole o IPv4 do anfitrião. Nas próximas vezes, pressione Enter para reutilizá-lo ou digite outro endereço. Na primeira sessão, crie um personagem e vá a **Multiplayer → Join via IP** com o endereço exibido e a porta do convite. Com um único personagem local nesse perfil, o launcher tenta entrar direto. Com vários personagens, escolha o personagem e conecte pelo menu do jogo.
+- **Problemas de setup:** feche o jogo e rode **Check / Repair Setup**. Uma divergência no perfil do amigo permite reconstruir a seleção usando os arquivos auditados disponíveis. A verificação ocorre antes da troca, e o perfil anterior fica em `backups/cliente-amigo/<perfil>/repair-*`. O reparo do amigo preserva personagens, mundos e configurações locais, reaplicando apenas os três presets exigidos da Vanity. Se faltarem artefatos exatos, obtenha-os na origem autorizada e rode a opção novamente. Para divergências no anfitrião, preserve a pasta da campanha e use a verificação para identificar quais arquivos auditados recuperar. O menu guarda somente o caminho do jogo, IPs de amigos e convites em `%LOCALAPPDATA%\TerrariaRev8\Multiplayer`.
+
+### Atalhos anteriores e teste em loopback
+
 Estes atalhos são para o anfitrião, que roda o servidor e o cliente no mesmo PC. Mantenha os dois arquivos `.bat` ao lado de `Servidor-Amigos.ps1`, na pasta `rev8` da instalação preparada.
 
 1. Abra **01 - Start Friends Server.bat**. Na primeira vez, se a cópia Vanity ainda não existir, feche o Terraria e escolha **P** para prepará-la a partir do perfil local existente. Depois, abra o arquivo novamente.
@@ -19,6 +36,13 @@ Estes atalhos são para o anfitrião, que roda o servidor e o cliente no mesmo P
 3. Aguarde **Server started** e deixe o console aberto. Abra **02 - Play With Friends.bat** e escolha a mesma opção **T** ou **L**. O atalho abre apenas o cliente e conecta ao servidor Vanity já iniciado.
 
 Para encerrar, saia do jogo e digite `exit` na janela do servidor. As janelas mostram os erros antes de pedir uma tecla para fechar. Para um amigo em outro PC, siga a seção **Instalação do amigo**.
+
+### Validação do menu
+
+- `tests/Test-MultiplayerMenu.ps1` executou o `.bat` no CMD a partir de uma pasta com espaços e simulou prontidão, host opcional, bloqueio de duplicatas, convite, primeira preparação, reaproveitamento do IP, reparo e recusa de conexão com Tailscale desconectado.
+- `tests/Test-PrivateNetwork.ps1` passou nas 27 verificações no Windows PowerShell 5.1, incluindo limites de jogadores e `secure=0` exclusivamente para Vanity.
+- Em um diretório descartável, a preparação e a auditoria reais aceitaram os 72 mods de Vanity e os 71 de Base. Uma cópia corrompida de Antisocial foi recusada. O reparo restaurou o hash auditado, preservou o perfil anterior e manteve os hashes dos arquivos de teste de personagem, mundo e preferências.
+- O menu novo ainda não foi testado entre dois PCs autenticados no Tailscale. Os testes de conexão em loopback da correção de projéteis estão em [PROJECTILE-SPAM-VANITY.md](PROJECTILE-SPAM-VANITY.md).
 
 ## Preparação manual do anfitrião
 
