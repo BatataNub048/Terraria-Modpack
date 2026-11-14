@@ -1,0 +1,7 @@
+displayName = Rev8 Vanity Laboratory (DISPOSABLE ONLY)
+author = Local modpack project
+version = 0.1.0
+side = Both
+weakReferences = Antisocial@1.7, MoreAccessories@1.5.1
+sortAfter = Antisocial, MoreAccessories
+includeSource = true

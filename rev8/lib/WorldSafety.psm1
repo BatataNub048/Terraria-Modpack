@@ -9,6 +9,7 @@ using System.Text;
 
 public sealed class PackWorldHeader {
     public string Name;
+    public Guid UniqueId;
     public int Width, Height, GameMode, Version;
 }
 
@@ -48,14 +49,15 @@ public static class PackWorldHeaderReader {
             string name = ReadString(reader);
             ReadString(reader); // seed
             reader.ReadUInt64(); // world generator version
-            if (reader.ReadBytes(16).Length != 16) throw new EndOfStreamException();
+            byte[] uniqueId = reader.ReadBytes(16);
+            if (uniqueId.Length != 16) throw new EndOfStreamException();
             for (int i = 0; i < 5; i++) reader.ReadInt32(); // ID and world boundaries
             int height = reader.ReadInt32();
             int width = reader.ReadInt32();
             int mode = reader.ReadInt32();
             if (width <= 0 || height <= 0 || width > 65535 || height > 65535 || mode < 0 || mode > 3)
                 throw new InvalidDataException("Invalid world dimensions or game mode.");
-            return new PackWorldHeader { Name = name, Width = width, Height = height, GameMode = mode, Version = version };
+            return new PackWorldHeader { Name = name, UniqueId = new Guid(uniqueId), Width = width, Height = height, GameMode = mode, Version = version };
         }
     }
 }

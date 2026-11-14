@@ -1,0 +1,165 @@
+# Multiplayer privado e Vanity experimental
+
+Esta alteração mantém o servidor solo `127.0.0.1:17789` e seus launchers. As novas campanhas são cópias independentes, sem transferência automática de progresso. Não faça merge na main enquanto os ensaios pendentes não forem concluídos.
+
+| Opção | Mods | Save independente | Porta |
+|---|---:|---|---:|
+| Servidor local existente | 71 | `ServidorLocal-Desempenho` | 17789 |
+| Amigos, base preservada | 71 | `Amigos-Desempenho` | 17790 |
+| Amigos, Vanity experimental | 72 | `Experimental-Multiplayer-Vanity` | 17791 |
+
+Todos exigem Terraria 1.4.4.9 / tModLoader 2026.9.3.1. Os clientes são configurados para 1920 × 1080 e zoom 0,85, com Better Zoom 5.3.0 preservado. Cada inicialização confere nomes, versões, hashes e dependências dos mods.
+
+## Abrir o Vanity com dois cliques
+
+**Anfitrião e amigos usam `Play Rev8 Multiplayer.bat`**, na pasta `rev8`. Extraia a atualização inteira antes de abrir o arquivo e mantenha os `.ps1`, `lib`, `profiles` e `configuracoes` ao lado dele. O menu usa o Vanity por padrão. Escolha Base se o convite indicar Base.
+
+### Preparação inicial
+
+1. Cada jogador instala Terraria, [tModLoader 2026.9.3.1 para Terraria 1.4.4.9](https://github.com/tModLoader/tModLoader/releases/tag/v2026.09.3.1) e [Tailscale para Windows](https://tailscale.com/download/windows). Inicie o tModLoader uma vez para instalar o runtime, depois feche. O menu detecta a instalação Steam ou pede a pasta que contém `tModLoader.dll` e salva a escolha.
+2. O anfitrião compartilha a máquina do servidor com os amigos pelo console do Tailscale. Cada amigo entra na própria conta e aceita o convite. Restrinja o acesso na política do Tailscale ao TCP **17791** para Vanity ou **17790** para Base. O menu mantém o servidor vinculado ao IP Tailscale e desativa UPnP. [Passo a passo oficial do Tailscale](https://tailscale.com/docs/use-cases/personal-or-at-home-use/share-private-game-server)
+3. O anfitrião precisa ter o servidor solo Rev8 preparado em `saves/ServidorLocal-Desempenho`, com um mundo e um personagem locais, e o `payload/Antisocial.tmod` auditado ao criar Vanity. O menu oferece preparar a cópia de amigos. Ela passa a ter progresso independente.
+4. Em cada PC de amigo, escolha **3 - Check / Repair Setup**, selecione o perfil do convite e **Friend**. Para preparar o perfil, use os arquivos exatos em `rev8/payload` (caminhos `payloadFile` do manifest ou `<nome-interno>.tmod`) ou instale os itens oficiais na Workshop. O menu também procura cópias já instaladas nas bibliotecas Steam e exige os hashes auditados. Se Antisocial estiver ausente, o instalador pode baixá-lo do item oficial via SteamCMD. Os links e IDs dos itens estão nos [manifests](profiles). Obtenha as variantes locais dos autores ou reproduza as versões seguindo os [patches e suas origens](patches/README.md). Baixe ou compartilhe um binário de terceiro somente quando a fonte e a autorização permitirem. O GitHub fornece scripts, código e manifests.
+
+### Jogar
+
+- **Anfitrião:** escolha **1 - Host a Game**, aceite **Vanity** e **4** jogadores ou selecione de **2 a 8**, contando você. Depois que o listener privado estiver pronto, o menu mostra o IP e a porta e pode abrir seu jogo. Compartilhe o conteúdo do convite ou o arquivo `%LOCALAPPDATA%\TerrariaRev8\Multiplayer\invite-Vanity.txt` somente com os convidados. O arquivo contém perfil, IPv4 e porta. Deixe o console dedicado aberto. Ao terminar, saia dos clientes, digite `exit` no console do servidor e aguarde o salvamento.
+- **Amigo:** escolha **2 - Join a Friend**, use o perfil do convite e cole o IPv4 do anfitrião. Nas próximas vezes, pressione Enter para reutilizá-lo ou digite outro endereço. Na primeira sessão, crie um personagem e vá a **Multiplayer → Join via IP** com o endereço exibido e a porta do convite. Com um único personagem local nesse perfil, o launcher tenta entrar direto. Com vários personagens, escolha o personagem e conecte pelo menu do jogo.
+- **Problemas de setup:** feche o jogo e rode **Check / Repair Setup**. Uma divergência no perfil do amigo permite reconstruir a seleção usando os arquivos auditados disponíveis. A verificação ocorre antes da troca, e o perfil anterior fica em `backups/cliente-amigo/<perfil>/repair-*`. O reparo do amigo preserva personagens, mundos e configurações locais, reaplicando apenas os três presets exigidos da Vanity. Se faltarem artefatos exatos, obtenha-os na origem autorizada e rode a opção novamente. Para divergências no anfitrião, preserve a pasta da campanha e use a verificação para identificar quais arquivos auditados recuperar. O menu guarda somente o caminho do jogo, IPs de amigos e convites em `%LOCALAPPDATA%\TerrariaRev8\Multiplayer`.
+
+### Atalhos anteriores e teste em loopback
+
+Estes atalhos são para o anfitrião, que roda o servidor e o cliente no mesmo PC. Mantenha os dois arquivos `.bat` ao lado de `Servidor-Amigos.ps1`, na pasta `rev8` da instalação preparada.
+
+1. Abra **01 - Start Friends Server.bat**. Na primeira vez, se a cópia Vanity ainda não existir, feche o Terraria e escolha **P** para prepará-la a partir do perfil local existente. Depois, abra o arquivo novamente.
+2. Escolha **T** para jogar pelo Tailscale ou **L** para testar neste PC. Pressione **2–8** para escolher o limite total de jogadores, incluindo o anfitrião, ou aguarde 10 segundos para usar **4**.
+3. Aguarde **Server started** e deixe o console aberto. Abra **02 - Play With Friends.bat** e escolha a mesma opção **T** ou **L**. O atalho abre apenas o cliente e conecta ao servidor Vanity já iniciado.
+
+Para encerrar, saia do jogo e digite `exit` na janela do servidor. As janelas mostram os erros antes de pedir uma tecla para fechar. Para um amigo em outro PC, siga a seção **Instalação do amigo**.
+
+### Validação do menu
+
+- `tests/Test-MultiplayerMenu.ps1` executou o `.bat` no CMD a partir de uma pasta com espaços e simulou prontidão, host opcional, bloqueio de duplicatas, convite, primeira preparação, reaproveitamento do IP, reparo e recusa de conexão com Tailscale desconectado.
+- `tests/Test-PrivateNetwork.ps1` passou nas 27 verificações no Windows PowerShell 5.1, incluindo limites de jogadores e `secure=0` exclusivamente para Vanity.
+- Em um diretório descartável, a preparação e a auditoria reais aceitaram os 72 mods de Vanity e os 71 de Base. Uma cópia corrompida de Antisocial foi recusada. O reparo restaurou o hash auditado, preservou o perfil anterior e manteve os hashes dos arquivos de teste de personagem, mundo e preferências.
+- O menu novo ainda não foi testado entre dois PCs autenticados no Tailscale. Os testes de conexão em loopback da correção de projéteis estão em [PROJECTILE-SPAM-VANITY.md](PROJECTILE-SPAM-VANITY.md).
+
+## Preparação manual do anfitrião
+
+Feche todos os clientes e servidores, inclusive submundos. Na pasta da Rev8:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Servidor-Amigos.ps1 -Modo Preparar -Perfil Base
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Servidor-Amigos.ps1 -Modo Preparar -Perfil Vanity
+```
+
+A origem é a campanha `ServidorLocal-Desempenho`, copiada uma única vez. Prepare a origem com um único mundo e um único personagem local. Depois, cada opção continua seu próprio progresso. A preparação verifica a cópia antes de publicar a pasta final. O `.wld`, `.twld`, `.plr`, `.tplr`, identidade do mundo e dados auxiliares são preservados. Não copie apenas o `.wld` para transferir uma campanha.
+
+## Tailscale
+
+1. Anfitrião e amigo instalam o Tailscale pelo [site oficial](https://tailscale.com/download/windows) e entram em suas próprias contas.
+2. No console administrativo, o anfitrião compartilha **somente a máquina do servidor** com o amigo. O amigo aceita o convite. A [documentação oficial para servidores de jogos privados](https://tailscale.com/docs/use-cases/personal-or-at-home-use/share-private-game-server) descreve esse fluxo.
+3. Revise a política de acesso do Tailscale para permitir ao amigo apenas TCP 17790 ou 17791 nessa máquina, conforme o perfil escolhido. O compartilhamento da máquina não é, por si só, uma restrição a uma única porta. Não use uma regra ampla como substituição de sua política existente.
+4. Não configure port forwarding, DMZ, Funnel ou acesso público. Os scripts não instalam VPN, não enviam convites e não alteram firewall, roteador ou regras do Tailscale.
+
+O launcher consulta o cliente Tailscale local, exige estado conectado e confirma que o IPv4 informado pelo serviço está atribuído ao PC. O servidor recebe `-ip <IPv4-Tailscale> -noupnp`, nunca `0.0.0.0`. Se não houver Tailscale conectado, ele aborta sem fallback.
+
+Inicie o servidor escolhido:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Servidor-Amigos.ps1 -Modo Servidor -Perfil Base
+# Ou, para o experimento:
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Servidor-Amigos.ps1 -Modo Servidor -Perfil Vanity
+```
+
+Aguarde `Listening`. Em outro terminal, o anfitrião abre seu cliente:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Servidor-Amigos.ps1 -Modo Cliente -Perfil Base
+# Use -Perfil Vanity nos dois comandos para o experimento.
+```
+
+O anfitrião também conecta pelo IP do Tailscale. O cliente local confere endereço, porta e processo do servidor antes de conectar. O servidor de amigos aceita até quatro jogadores por padrão, incluindo o anfitrião. Use `-MaxPlayers` no comando de servidor para escolher de 2 a 8 vagas. Por exemplo:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Servidor-Amigos.ps1 -Modo Servidor -Perfil Vanity -MaxPlayers 6
+```
+
+O limite vale para Base e Vanity. Reinicie o servidor para aplicar outro valor. Cada participante precisa de acesso autorizado pelo Tailscale. O teste cobre a configuração gerada. Uma sessão com quatro clientes conectados ainda não foi testada. Execute somente um servidor Rev8 por vez, pois Subworld Library usa canais compartilhados.
+
+Para teste somente neste PC, acrescente `-Rede Local` ao servidor e ao cliente. Isso mantém a nova cópia em loopback; não altera o servidor solo antigo.
+
+O launcher gera uma única opção `secure` por perfil. Vanity usa `secure=0` na porta 17791 para evitar a expulsão por `Projectile spam` em rajadas legítimas do pacote. Base mantém `secure=1`. O ajuste de Vanity desativa as verificações de spam vanilla vinculadas a essa opção, incluindo blocos e líquidos. Use essa configuração somente no servidor privado. Reinicie pelo launcher para que ele regenere `serverconfig-amigos.txt` antes de carregar o mundo.
+
+## Instalação do amigo
+
+1. Instale Terraria e **tModLoader 2026.9.3.1 para Terraria 1.4.4.9** pela distribuição oficial. Não substitua por uma versão mais nova só porque a Steam a recomenda. O launcher recusará versões diferentes. Para uma instalação oficial arquivada, use a [release v2026.09.3.1 do tModLoader](https://github.com/tModLoader/tModLoader/releases/tag/v2026.09.3.1) e informe sua pasta com `-PastaTml`.
+2. Extraia o pacote base Rev8 auditado em uma pasta própria. A atualização de scripts é uma sobreposição para esse pacote: ela não inclui Terraria, tModLoader, mundos ou personagens do anfitrião, nem uma nova redistribuição dos mods de terceiros.
+3. Copie os arquivos da atualização para essa pasta. O pacote base deve conter `payload`, `lib`, `profiles` e `configuracoes`. Preserve os arquivos de correções que já acompanham a Rev8.
+4. Feche o jogo e execute uma das opções:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Cliente-Amigo.ps1 -Modo Preparar -Perfil Base
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Cliente-Amigo.ps1 -Modo Preparar -Perfil Vanity
+```
+
+Use somente o perfil combinado com o anfitrião. O modo Vanity baixa o Antisocial diretamente da Workshop via SteamCMD se ele estiver ausente do pacote. Só aceita o hash auditado; se a Workshop atualizar o arquivo, interrompe e exige nova auditoria. Não instala HERO's Mod nem outro mod adicional. Não habilite duplicatas pela Workshop ou mods fora do manifest.
+
+5. Com Tailscale conectado, abra:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Cliente-Amigo.ps1 -Perfil Base -IpTailscale 100.64.0.1
+# Substitua pelo IPv4 que o Tailscale mostra para a máquina do anfitrião.
+# Para o experimento, use -Perfil Vanity.
+```
+
+6. Crie seu próprio personagem, com nome diferente do anfitrião. Entre em **Multiplayer → Join via IP**, selecione o personagem, informe o IP do Tailscale do anfitrião e a porta **17790 (Base)** ou **17791 (Vanity)**. Para reconectar, repita o mesmo procedimento com o mesmo perfil e personagem.
+
+O instalador cria `saves/ClienteAmigo-Base` ou `saves/ClienteAmigo-Vanity`; não usa os saves normais do usuário. Se houver erro de hash, versão ou dependência, não substitua arquivos aleatoriamente: use o mesmo pacote auditado do anfitrião.
+
+## Configuração de Vanity
+
+Antisocial **1.7**, autor **jopojelly/javidpack**, [Workshop 2564872136](https://steamcommunity.com/sharedfiles/filedetails/?id=2564872136), build tModLoader 2025.6.3.0, 95.782 bytes:
+
+```text
+SHA-256 2924fe769d02b427a849a3554c7ee96cc37b6f584513773e8f7d2e6421499a00
+```
+
+Metadados do `.tmod`: dependências obrigatórias e opcionais vazias. O pacote inclui `lib/0Harmony.dll`; isso não é um mod adicional a instalar. O binário oficial foi mantido intacto. O [código do autor](https://github.com/JavidPack/Antisocial/blob/1.4/Antisocial.cs) mostra o processamento de slots sociais e a [configuração](https://github.com/JavidPack/Antisocial/blob/1.4/Config.cs) distingue acessórios, armaduras e slots de mods.
+
+```json
+{
+  "SocialAccessories": -1,
+  "SocialArmor": false,
+  "ModdedAccessorySlots": true
+}
+```
+
+`-1` afeta os slots sociais vanilla desbloqueados e utilizáveis, respeitando as condições normais de dificuldade/progressão. Os três slots extras de More Accessories permanecem funcionais, com sua coluna social:
+
+```json
+{
+  "SlotCount": 3,
+  "VanitySlotCount": 0,
+  "EnableLoadoutSupport": false,
+  "AnyAccessorySocial": true
+}
+```
+
+Em More Accessories 1.5.1, `VanitySlotCount` converte slots em exclusivamente sociais. Não deve ser configurado para 3 neste perfil. `AnyAccessorySocial` só permite colocar acessórios na coluna social; não concede bônus. Antisocial é o único mecanismo novo de ativação desses bônus.
+
+TooManySlots/Fargo's Equipable Inventory continua instalado, porém `Inventory`, `Piggy`, `Safe` e `Forge` ficam explicitamente `false` apenas no experimento. Isso elimina fontes adicionais de bônus de itens guardados. Atributos nativos de informação de itens vanilla, como relógios no inventário, não são removidos por esta alteração.
+
+Não há uma promessa de eliminar todas as interações entre cópias e acessórios de mods. Evite equipar duas cópias do mesmo acessório ou acessórios mutuamente exclusivos em colunas diferentes até testar essa combinação. Os ensaios medem aplicação duplicada de uma única instância, não reescrevem as regras de balanceamento dos mods.
+
+## Salvamento e encerramento
+
+Antes de iniciar o servidor, há backup verificado por hash dos saves e dados auxiliares em `backups/servidor-amigos/<perfil>/<data>`. O cliente do amigo também faz backup antes de abrir. Backups não são apagados automaticamente.
+
+1. Ambos usam **Save & Exit** e fecham os clientes.
+2. No console do servidor, digite **exit** e aguarde o salvamento e o encerramento.
+3. Não use `exit-nosave` nem feche o processo à força durante a gravação.
+
+Se a conexão falhar, confirme o IP no Tailscale, perfil/porta, estado `Listening`, política de acesso e versões. `Test-NetConnection <IP-Tailscale> -Port 17790` (ou 17791) verifica somente TCP, não compatibilidade de gameplay. Se o firewall bloquear, avalie manualmente uma regra restrita à rede/interface privada e ao amigo; este pacote não cria regras.
+
+A análise e os resultados do teste do erro de projéteis estão em [PROJECTILE-SPAM-VANITY.md](PROJECTILE-SPAM-VANITY.md).
