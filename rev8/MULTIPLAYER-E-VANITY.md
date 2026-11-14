@@ -10,7 +10,17 @@ Esta alteração mantém o servidor solo `127.0.0.1:17789` e seus launchers. As 
 
 Todos exigem Terraria 1.4.4.9 / tModLoader 2026.9.3.1. Os clientes são configurados para 1920 × 1080 e zoom 0,85, com Better Zoom 5.3.0 preservado. Cada inicialização confere nomes, versões, hashes e dependências dos mods.
 
-## Preparar o anfitrião
+## Abrir o Vanity com dois cliques
+
+Estes atalhos são para o anfitrião, que roda o servidor e o cliente no mesmo PC. Mantenha os dois arquivos `.bat` ao lado de `Servidor-Amigos.ps1`, na pasta `rev8` da instalação preparada.
+
+1. Abra **01 - Start Friends Server.bat**. Na primeira vez, se a cópia Vanity ainda não existir, feche o Terraria e escolha **P** para prepará-la a partir do perfil local existente. Depois, abra o arquivo novamente.
+2. Escolha **T** para jogar pelo Tailscale ou **L** para testar neste PC. Pressione **2–8** para escolher o limite total de jogadores, incluindo o anfitrião, ou aguarde 10 segundos para usar **4**.
+3. Aguarde **Server started** e deixe o console aberto. Abra **02 - Play With Friends.bat** e escolha a mesma opção **T** ou **L**. O atalho abre apenas o cliente e conecta ao servidor Vanity já iniciado.
+
+Para encerrar, saia do jogo e digite `exit` na janela do servidor. As janelas mostram os erros antes de pedir uma tecla para fechar. Para um amigo em outro PC, siga a seção **Instalação do amigo**.
+
+## Preparação manual do anfitrião
 
 Feche todos os clientes e servidores, inclusive submundos. Na pasta da Rev8:
 
