@@ -1,0 +1,14 @@
+Mods: {
+  Rev8CraftingProgression: {
+    Items: {
+      WoodlandBundle: {
+        DisplayName: Woodland
+        Tooltip: "Combines six woodland enchantment effects\nUpgrades to Force of Timber"
+      }
+      CombinedStationsTier4: {
+        DisplayName: Combined Stations (Tier 4)
+        Tooltip: "Combines Tier 3 crafting stations and the Autohammer"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+displayName = Rev8 Crafting Progression
+author = Rev8
+version = 0.8.0
+modReferences = MagicStorage, Fargowiltas, FargowiltasSouls, CalamityMod
+sortAfter = FargowiltasCrossmod, FargosSoulsModDLCRecreated, FargowiltasSoulsDLC
+side = Both
